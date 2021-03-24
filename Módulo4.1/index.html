@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    
+    <style>
+        body{
+            font-size: 1.2rem;
+        }
+    </style>
+
+</head>
+
+<!-- Displays apresentedos nessa aula:
+display:none, display:block, display:inline e o display:inline-block -->
+
+<!--  O display:block preenche toda a largura da tela/ ocupa toda a linha (ex:Div) -->
+<!--  Podemos modificar a largura/altura do elemento-->
+
+<!--  O display:inline permanece na mesma linha (ex:Span)-->
+<!--  Não podemos modificar a largura/altura do elemento -->
+
+<!--  O parágrafo(<p>) naturalmente já vem com uma margin , parecido(mas é ~=) com um display:block-->
+
+    <!-- Não podemos usar um elemento do tipo block(Div) em um parágrafo (p) -->
+    <!-- Não pode ter uma div dentro de um p e tb não pode ter um p dentro de um p.(Causa a quebra do fluxo do parágrafo) -->
+
+<!--  O display:inline-block possui as característiscas do display:inline, mas ele permite que modifique a largura/altura -->
+
+<!--  O display:none faz com que um elemento nunca tivesse sido colocado na tela -->
+
+<body>
+    <div style="background-color: blue;">
+        <div> Esta é uma DIV normal </div>
+        <div> E aqui a história<div style="background-color: red; width: 500px; height: 50px;"> Div de dentro</div>
+        contínua </div>
+
+    </div>
+
+    <div style="background-color: yellow;">
+        
+        <p style="margin: 0;"> Este é um parágrafo normal</p>
+        <p style="margin: 0;"> E aqui a história contínua</p>
+    
+    </div>
+
+    <p>
+
+        Aqui eu tenho o inicio de um parágrafo <spam style="background-color: green; width: 500px; display: inline-block;"> um SPAN no meio</spam> E o fim do parágrafo.
+
+    </p>
+
+    <p style="background-color: red;">
+        Aqui eu tenho o inicio de um parágrafo <div style="background-color: blue;"> uma div no meio</div> E o fim do parágrafo.
+    </p>
+
+    <p>
+        Aqui eu tenho o inicio de um parágrafo <img src="wanda_max.jpg" style="width: 500px; display: none;" > E o fim do parágrafo. 
+    </p>
+
+</body>
+</html>
