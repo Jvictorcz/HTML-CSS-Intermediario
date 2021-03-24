@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+
+    <style>
+ body {
+            font-size: 1.2rem;
+            margin: 0;
+
+        }
+                /*
+        .static {
+            position: static;
+
+
+        }
+
+        .relative {
+            position: relative;
+            /* top: 40px; 
+        }
+
+        .fixed {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+
+        }
+
+        .absolute {
+            position: absolute;
+            top: 40px;
+        } */
+
+        .sticky{
+            position: sticky;
+            top: 0;
+
+       }
+       
+        .quadrado {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+
+        }
+
+        .ret {
+            width: 200px;
+            height: 500px;
+            margin-top: 10px;
+            overflow: auto;
+        }
+
+        .bg-red {
+            background-color: red;
+        }
+
+        .bg-blue {
+            background-color: blue;
+        }
+
+        .bg-green{
+            background-color: green;
+        }
+
+    </style>
+
+    <!-- O position:static segue o fluxo padrão de uma página -->
+    <!-- O position:static é o padrão -->
+
+    <!-- O position:relative vai ser posicionado inicialmente da mesma maneira que o static,
+    só que ele vai poder receber outras propriedades. ex:right,left,top e bottom. -->
+    <!-- A position:relative é relativa a posição original que ela ficaria se fosse static -->
+
+    <!-- O position:fixed também vai ter as propriedades right,left,top e bottom , mas em relação a nossa janela.
+        (Pode ser usado como pop-up)-->
+
+    <!-- O position:absolute a principio ele é parecido com o static, mas ele também pode receber as propriedades
+     right,left,top e bottom. -->
+    <!-- O position:absolute vai ter como referência o "pai" do nosso elemento, diferente do relative (O absolute não vai funcionar corretamente
+        se o static for o "pai", se todos forem statics o absolute vai levar em consideração o body !!!!) -->
+
+
+    <!-- O position:sticky fica fixo na tela.(interessante!!)  -->
+
+
+
+</head>
+
+<body>
+
+    <!-- <div class=" static quadrado bg-blue">
+
+    </div>
+
+    <div class= "ret relative bg-blue">
+        <div class=" static quadrado bg-red">
+        </div>
+        <div class=" absolute quadrado bg-green">
+         </div> 
+    </div> -->
+
+
+
+    <div class="bg-blue ret">
+       
+        <div class="quadrado bg-red"></div>
+        <div class="quadrado bg-green sticky"></div>
+        <div class="quadrado bg-red"></div>
+        <div class="quadrado bg-red"></div>
+        <div class="quadrado bg-red"></div>
+        <div class="quadrado bg-red"></div>
+        <div class="quadrado bg-red"></div>
+        <div class="quadrado bg-red"></div>
+        <div class="quadrado bg-red"></div>
+        <div class="quadrado bg-red"></div>
+        
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>
