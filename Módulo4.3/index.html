@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento horizontal</title>
+
+    <style>
+        #quadrado {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            margin: auto;
+            margin-bottom: 10%;
+        }
+
+        /* Formas de posicionar uma img horizontalmente */
+
+        /* img{      *a tag img vem com um display:inline.
+            display: block;
+            margin: auto;
+        } */
+
+        img {
+            display: inline-block;
+
+        }
+        #container{
+            text-align: center;       /*o text-align funciona com o display:inline/inline-block*/
+        }  
+    </style>
+</head>
+
+<body>
+    <div id="quadrado">
+    </div>
+
+    <div id="container"><img src="./wanda_max.jpg">
+    </div>
+</body>
+
+</html>
