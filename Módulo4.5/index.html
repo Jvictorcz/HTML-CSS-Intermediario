@@ -1,22 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Float</title>
 
     <style>
-        body{
-            font-size: 1.2rem;
+        /* body {
+            font-size: 1rem;
         }
+        img{
+           float: left;
+        }
+        p{
+            clear: none;
+        }
+        div{
+            border: 1px black solid;
+            padding: 10px;
+            background-color:pink;
+            overflow: auto;
+        } */
+
+
+        /* O uso do float é um maneira de criar um menu!!!! */
+
+        ul{
+            list-style: none;
+        }
+        li{
+            float: left;
+            padding: 10px;
+            background-color: gray;
+            margin: 5px;
+        }
+
+
+
     </style>
+
+    <!--O efeito do float tem a função de "abraçar" a img ,no exemplo. -->
+    <!--O clear tem a função de eliminar a função do float -->
+    <!--O overflow:auto é utilizado para que a div seja do tamanho dos elementos que dispuserem dentro dela, mesmo que esses elementos estejam como float.-->
 </head>
+
 <body>
-    
-    <img src="./wanda_max.jpg">
-    <p>
-        Texto qualquer
-    </p>
+    <!-- <div>
+
+        <img src="./wanda_max.jpg">
+
+        <p>
+            qualquerTexto qualquerTexto qualquerTexto qualquerTexto qualquerTexto qualquerTexto
+            qualquerTexto qualquerTexto qualquerTexto qualquerTexto qualquerTexto qualquerTexto qualquerTexto
+            qualquerTexto
+            qualquerTexto qualquerTexto qualquerTexto qualquerTexto qualquer Texto qualquerTexto qualquerTexto
+            qualquerTexto
+            qualquerTexto qualquerTexto qualquerTexto qualquerTexto qualquerTexto qualquerTexto qualquerTexto
+            qualquerTexto
+
+
+
+        </p>
+
+    </div> -->
+
+
+    <ul>
+        <li>Home</li>
+        <li>Cursos</li>
+        <li>Contatos</li>
+    </ul>
+
+
 
 </body>
+
 </html>
