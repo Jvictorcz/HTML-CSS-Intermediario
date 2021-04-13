@@ -1,28 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tipos de input / Select</title>
+    <title>Tipos de input / Select / Textarea </title>
+    <style>
+        .caixa{
+            width: 500px;
+            height: 100px;
+            margin: auto;
+            margin-bottom:10px ;
+            margin-top: 10px;
+            
+        }
+        .v1{
+            width: 500px;
+            height: 100px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            border:none; 
+            border-radius: 10px ;
+           
+            
+        }
+        
+    </style>
 </head>
+
 <body>
     <form method="GET" action="">
-    
-        <input type="text"  name="search_query"> <br>
-        <input type="password" name="senha"> <br> <!--Usar o method:POST-->
-        
+
+        <input type="text" name="search_query"> <br>
+        <input type="password" name="senha"> <br>
+        <!--Usar o method:POST-->
+
         <input type="checkbox" name="curso" value="op1">React Native <br>
         <!-- Value utilizado para identificar os cursos -->
         <input type="checkbox" name="curso" value="op2">React JS <br>
 
-        <input type="radio" name="gender" value="m" checked >Masc<br>
+        <input type="radio" name="gender" value="m" checked>Masc<br>
         <!--  Radio (circulo) ,usando o mesmo "name" faz com que só uma das opções possa ser selecionada.  -->
         <!-- Checked faz com que seja o padrão (selecionado)  -->
         <input type="radio" name="gender" value="f">Fem<br>
-         
+
         <!-- Value tem a função de alterar o nome do reset -->
-        <input type="reset" value="Limpar" >
+        <input type="reset" value="Limpar">
 
         <input type="submit">
 
@@ -31,18 +54,31 @@
         <!-- Select tem a função de drop-down -->
         <!-- Utilizando o size , transforma o drop-down em um scroll -->
         <!-- O multiple permite que selecione mais de uma opção-->
-        <select name="estado" size="3" multiple  > 
-            
+        <select name="estado" size="3" multiple>
+
             <!-- O selected tem a função de forçar uma opção como padrão -->
-            
+
             <option value="-//" selected>Selecione um estado</option>
-            <option value="AM" >Amazonas</option>
+            <option value="AM">Amazonas</option>
             <option value="SP">São Paulo</option>
             <option value="RN">Rio Grande do Norte</option>
-           
+
         </select>
         <input type="submit">
 
-    </form>
+        <br> <br> <br>
+
+        <input type="text" name="assunto"><br>
+
+        <!-- textarea usado para criar um formulário de contato (Dá para modificar com CSS) -->
+        <div class="caixa">
+            <textarea class="v1" placeholder="Escreva um comentário" name="mensagem" ></textarea>
+            <input type="submit"> 
+        </div>
+     
+        
+        
+        
 </body>
+
 </html>
